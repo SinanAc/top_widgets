@@ -6,12 +6,7 @@ class FirstWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
+    return  Scaffold(
         body: CustomScrollView(
           slivers: [
             ...List<int>.generate(5, (index) => index).map(
@@ -25,7 +20,7 @@ class FirstWidget extends StatelessWidget {
             ),
             StickySliver(
               child: Container(
-                height: 400,
+                height: 200,
                 color: Colors.purple,
               ),
             ),
@@ -40,7 +35,6 @@ class FirstWidget extends StatelessWidget {
             )
           ],
         ),
-      ),
     );
   }
 }
