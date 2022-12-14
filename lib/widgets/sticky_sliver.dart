@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class FirstWidget extends StatelessWidget {
-  const FirstWidget({super.key});
+class StickySliverPage extends StatelessWidget {
+  const StickySliverPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class FirstWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
